@@ -23,6 +23,7 @@ public class App {
 	private Integer tasksStaged;
 	private Integer tasksRunning;
 	private List<HealthCheck> healthChecks;
+	private Collection<String> dependencies;
 
 	public String getId() {
 		return id;
@@ -167,6 +168,14 @@ public class App {
 
 	public void setHealthChecks(List<HealthCheck> healthChecks) {
 		this.healthChecks = healthChecks;
+	}
+
+	public Collection<String> getDependencies() {
+		return dependencies;
+	}
+
+	public void setDependencies(Collection<String> dependencies) {
+		this.dependencies = dependencies;
 	}
 
 	@Override
